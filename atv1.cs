@@ -108,3 +108,26 @@
     Console.WriteLine($"o numero {t} e o menor");
   }
    
+  Console.WriteLine("Digite 3 numeros:");
+  int N1 = int.Parse(Console.ReadLine());
+  int N2 = int.Parse(Console.ReadLine());
+  int N3 = int.Parse(Console.ReadLine());
+
+  int maior = N1;
+  if (N2 > maior) {
+    maior = N2;
+  }
+  if (N3 > maior) {
+    maior = N3;
+  }
+
+  int menor = N1;
+  if (N2 < menor) {
+    menor = N2;
+  }
+  if (N3 < menor) {
+    menor = N3;
+  }
+
+  Console.WriteLine($"O maior número é: {maior}");
+  Console.WriteLine($"O menor número é: {menor}");
